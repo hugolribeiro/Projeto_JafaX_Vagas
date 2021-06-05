@@ -79,6 +79,8 @@ public class UsuarioControl {
     }
 
     public void generatedTable() {
+        listarTodos();
+
         TableColumn<Usuario, Long> colId = new TableColumn<>("Id");
         colId.setCellValueFactory(new PropertyValueFactory<Usuario, Long>("id"));
 
@@ -101,7 +103,7 @@ public class UsuarioControl {
                     setEntity(novo);
                 }
         );
-
+        table.setMaxHeight(200);
         table.setItems(usuarios);
     }
 

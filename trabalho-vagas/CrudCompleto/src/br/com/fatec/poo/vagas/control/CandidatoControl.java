@@ -88,6 +88,7 @@ public class CandidatoControl {
     }
 
     public void generatedTable() {
+        listarTodos();
         TableColumn<Candidato, Long> colId = new TableColumn<>("Id");
         colId.setCellValueFactory(new PropertyValueFactory<Candidato, Long>("id"));
 
@@ -110,6 +111,7 @@ public class CandidatoControl {
                     setEntity(novo);
                 }
         );
+        table.setMaxHeight(200);
 
         table.setItems(candidatos);
     }

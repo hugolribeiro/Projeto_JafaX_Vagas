@@ -74,7 +74,9 @@ public class CandidatoBoundary implements TelaStrategy {
         gp.add(gpButtons, 1, 7);
 
         Pane pane = new Pane();
-        control.generatedTable();
+        if(control.getTable().getColumns().size() == 0) {
+            control.generatedTable();
+        }
         Node table = control.getTable();
         pane.getChildren().add(table);
 

@@ -72,6 +72,8 @@ public class VagaControl {
     }
 
     public void generatedTable() {
+        listarTodos();
+
         TableColumn<Vaga, Long> colId = new TableColumn<>("Id");
         colId.setCellValueFactory(new PropertyValueFactory<Vaga, Long>("id"));
 
@@ -89,6 +91,8 @@ public class VagaControl {
                 }
         );
 
+        table.setMaxHeight(280);
+        table.setMaxWidth(400);
         table.setItems(vagas);
     }
 

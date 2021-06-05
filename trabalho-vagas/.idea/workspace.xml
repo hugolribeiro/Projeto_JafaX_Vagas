@@ -2,8 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0bb39095-1c04-4e4d-91a0-03909ab297a4" name="Default Changelist" comment="Corrigido bug na pesquisa">
-      <change beforePath="$PROJECT_DIR$/out/production/trabalho-vagas/br/com/fatec/poo/vagas/boundary/CandidatoBoundary.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/trabalho-vagas/br/com/fatec/poo/vagas/boundary/CandidatoBoundary.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/trabalho-vagas/br/com/fatec/poo/vagas/control/CandidatoControl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/trabalho-vagas/br/com/fatec/poo/vagas/control/CandidatoControl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_6_5_2021_1_08_PM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_6_5_2021_1_08_PM__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrudCompleto/src/br/com/fatec/poo/vagas/boundary/CandidatoBoundary.java" beforeDir="false" afterPath="$PROJECT_DIR$/CrudCompleto/src/br/com/fatec/poo/vagas/boundary/CandidatoBoundary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrudCompleto/src/br/com/fatec/poo/vagas/boundary/TelaPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/CrudCompleto/src/br/com/fatec/poo/vagas/boundary/TelaPrincipal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrudCompleto/src/br/com/fatec/poo/vagas/control/CandidatoControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/CrudCompleto/src/br/com/fatec/poo/vagas/control/CandidatoControl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrudCompleto/src/br/com/fatec/poo/vagas/control/EmpresaControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/CrudCompleto/src/br/com/fatec/poo/vagas/control/EmpresaControl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrudCompleto/src/br/com/fatec/poo/vagas/control/UsuarioControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/CrudCompleto/src/br/com/fatec/poo/vagas/control/UsuarioControl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrudCompleto/src/br/com/fatec/poo/vagas/control/VagaControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/CrudCompleto/src/br/com/fatec/poo/vagas/control/VagaControl.java" afterDir="false" />
+    </list>
+    <list id="9e142847-9810-418d-b1fd-d17d49ffa0e7" name="Changes by Hugo" comment="">
+      <change beforePath="$PROJECT_DIR$/CrudCompleto/src/br/com/fatec/poo/vagas/boundary/EmpresaBoundary.java" beforeDir="false" afterPath="$PROJECT_DIR$/CrudCompleto/src/br/com/fatec/poo/vagas/boundary/EmpresaBoundary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrudCompleto/src/br/com/fatec/poo/vagas/boundary/UsuarioBoundary.java" beforeDir="false" afterPath="$PROJECT_DIR$/CrudCompleto/src/br/com/fatec/poo/vagas/boundary/UsuarioBoundary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrudCompleto/src/br/com/fatec/poo/vagas/boundary/VagaBoundary.java" beforeDir="false" afterPath="$PROJECT_DIR$/CrudCompleto/src/br/com/fatec/poo/vagas/boundary/VagaBoundary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrudCompleto/src/br/com/fatec/poo/vagas/control/EmpresaControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/CrudCompleto/src/br/com/fatec/poo/vagas/control/EmpresaControl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrudCompleto/src/br/com/fatec/poo/vagas/control/UsuarioControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/CrudCompleto/src/br/com/fatec/poo/vagas/control/UsuarioControl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrudCompleto/src/br/com/fatec/poo/vagas/control/VagaControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/CrudCompleto/src/br/com/fatec/poo/vagas/control/VagaControl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +39,35 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/CrudCompleto/src/br/com/fatec/poo/vagas/control/UsuarioControl.java">
+      <ranges>
+        <range start1="81" end1="81" start2="81" end2="83" changelist="9e142847-9810-418d-b1fd-d17d49ffa0e7" />
+        <range start1="103" end1="104" start2="105" end2="106" changelist="0bb39095-1c04-4e4d-91a0-03909ab297a4" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/CrudCompleto/src/br/com/fatec/poo/vagas/control/VagaControl.java">
+      <ranges>
+        <range start1="74" end1="74" start2="74" end2="76" changelist="9e142847-9810-418d-b1fd-d17d49ffa0e7" />
+        <range start1="83" end1="84" start2="85" end2="89" changelist="0bb39095-1c04-4e4d-91a0-03909ab297a4" />
+        <range start1="91" end1="91" start2="96" end2="98" changelist="0bb39095-1c04-4e4d-91a0-03909ab297a4" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/CrudCompleto/src/br/com/fatec/poo/vagas/control/EmpresaControl.java">
+      <ranges>
+        <range start1="92" end1="92" start2="92" end2="94" changelist="9e142847-9810-418d-b1fd-d17d49ffa0e7" />
+        <range start1="117" end1="117" start2="119" end2="120" changelist="0bb39095-1c04-4e4d-91a0-03909ab297a4" />
+      </ranges>
+    </file>
   </component>
   <component name="ProjectId" id="1tV6Uthx4PXhuNY4RQrWJWy6Wl4" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />

@@ -90,6 +90,8 @@ public class EmpresaControl {
     }
 
     public void generatedTable() {
+        listarTodos();
+
         TableColumn<Empresa, Long> colId = new TableColumn<>("Id");
         colId.setCellValueFactory(new PropertyValueFactory<Empresa, Long>("id"));
 
@@ -115,6 +117,7 @@ public class EmpresaControl {
                     setEntity(novo);
                 }
         );
+        table.setMaxHeight(200);
 
         table.setItems(empresas);
     }

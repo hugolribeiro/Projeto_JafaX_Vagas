@@ -1,6 +1,7 @@
 package br.com.fatec.poo.vagas.boundary;
 
 import javafx.beans.binding.Bindings;
+import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
@@ -67,6 +68,15 @@ public class UsuarioBoundary implements TelaStrategy {
         gpButtons.add(btnLimpar, 4, 5);
         gpButtons.setHgap(2);
         gp.add(gpButtons, 1, 6);
+
+        Pane pane = new Pane();
+        if(control.getTable().getColumns().size() == 0) {
+            control.generatedTable();
+        }
+        Node table = control.getTable();
+        pane.getChildren().add(table);
+
+        gp.add(pane, 1, 8);
 
         btnAdicionar.setOnAction((e) -> {
             control.adicionar();
