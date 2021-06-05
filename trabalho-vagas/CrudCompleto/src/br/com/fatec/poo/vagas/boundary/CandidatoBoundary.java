@@ -73,6 +73,13 @@ public class CandidatoBoundary implements TelaStrategy {
         gpButtons.setHgap(2);
         gp.add(gpButtons, 1, 7);
 
+        Pane pane = new Pane();
+        control.generatedTable();
+        Node table = control.getTable();
+        pane.getChildren().add(table);
+
+        gp.add(pane, 1, 8);
+
         btnAdicionar.setOnAction((e) -> {
             control.adicionar();
         });

@@ -88,8 +88,6 @@ public class CandidatoControl {
     }
 
     public void generatedTable() {
-        listarTodos();
-
         TableColumn<Candidato, Long> colId = new TableColumn<>("Id");
         colId.setCellValueFactory(new PropertyValueFactory<Candidato, Long>("id"));
 
