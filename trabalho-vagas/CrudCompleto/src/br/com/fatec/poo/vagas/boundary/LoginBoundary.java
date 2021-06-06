@@ -1,10 +1,7 @@
 package br.com.fatec.poo.vagas.boundary;
 
 import javafx.geometry.Pos;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.PasswordField;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Pane;
 
@@ -15,8 +12,8 @@ public class LoginBoundary implements TelaStrategy{
     }
 
     private TextField txtLogin = new TextField();
-    private PasswordField txtSenha = new PasswordField();
-//    private TextField txtSenha = new TextField();
+    private PasswordField passSenha = new PasswordField();
+    private TextField txtSenha = new TextField();
 
     private Button btnEntrar = new Button("Entrar");
     private Button btnLimpar = new Button("Limpar");
@@ -29,28 +26,45 @@ public class LoginBoundary implements TelaStrategy{
     public Pane gerarTelaStrategy() {
         GridPane gp = new GridPane();
 
+//        Não houve a necessidade
+//        txtSenha.setManaged(false);
+//        txtSenha.setVisible(false);
+
+        CheckBox passCheckBox = new CheckBox("Show/Hide password");
+
+        txtSenha.managedProperty().bind(passCheckBox.selectedProperty());
+        txtSenha.visibleProperty().bind(passCheckBox.selectedProperty());
+
+        passSenha.managedProperty().bind(passCheckBox.selectedProperty().not());
+        passSenha.visibleProperty().bind(passCheckBox.selectedProperty().not());
+
+        txtSenha.textProperty().bindBidirectional(passSenha.textProperty());
+
+
 //        vincular();
 
         gp.add(new Label("Login"), 0, 0);
         gp.add(new Label("Senha"), 0, 1);
 
         txtLogin.setMaxWidth(150);
-        txtSenha.setMaxWidth(150);
-        GridPane gridButons = new GridPane();
+        passSenha.setMaxWidth(150);
+        GridPane gridButtons = new GridPane();
 
-        gridButons.add(btnEntrar,0,1);
-        gridButons.add(btnLimpar,1,1);
-        gridButons.setHgap(10);
+        gridButtons.add(btnEntrar,0,1);
+        gridButtons.add(btnLimpar,1,1);
+        gridButtons.setHgap(10);
 
 
         gp.add(txtLogin, 1, 0);
+        gp.add(passSenha, 1, 1);
         gp.add(txtSenha, 1, 1);
-        gp.add(gridButons,1,2);
+        gp.add(passCheckBox, 3, 3);
+        gp.add(gridButtons,1,4);
 
 
         btnEntrar.setOnAction((e) -> {
             String login = txtLogin.getText();
-            String senha = txtSenha.getText();
+            String senha = passSenha.getText();
             String acao = btnEntrar.getText();
             if(login.equals("Admin") && (senha.equals("Admin"))){
                 limparLogin();
@@ -71,16 +85,13 @@ public class LoginBoundary implements TelaStrategy{
             limparLogin();
         });
 
-//        String role = txtLogin.getText();
-//        if role == "Admin" = telaprincipalcompleta
-//                if role == "usuario" = telaprincipal sem empresa e sem qualquercoisa
-
         return gp;
     }
 
     public void limparLogin(){
         txtLogin.setText("");
         txtSenha.setText("");
+        passSenha.setText("");
     }
 
 
