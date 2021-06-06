@@ -3,6 +3,7 @@ package br.com.fatec.poo.vagas.control;
 import br.com.fatec.poo.vagas.DAO.EmpresaDAO;
 import br.com.fatec.poo.vagas.DAO.EmpresaDAOImpl;
 import br.com.fatec.poo.vagas.entity.Empresa;
+import br.com.fatec.poo.vagas.entity.Vaga;
 import javafx.beans.property.LongProperty;
 import javafx.beans.property.SimpleLongProperty;
 import javafx.beans.property.SimpleStringProperty;

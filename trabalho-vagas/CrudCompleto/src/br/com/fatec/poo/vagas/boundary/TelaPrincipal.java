@@ -13,7 +13,7 @@ import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 
 
-public class TelaPrincipal extends Application {
+public class TelaPrincipal extends Application implements ExecutorAcoes {
 
     private Button btnCandidato = new Button("Candidato");
     private Button btnVagas = new Button("Vagas");
@@ -24,6 +24,7 @@ public class TelaPrincipal extends Application {
     private TelaStrategy telaUsuario = new UsuarioBoundary();
     private TelaStrategy telaVagas = new VagaBoundary();
     private TelaStrategy telaEmpresa = new EmpresaBoundary();
+    private TelaStrategy telaLogin = new LoginBoundary(this);
 
 
     private static CandidatoControl controlCandidato = new CandidatoControl();
@@ -64,11 +65,11 @@ public class TelaPrincipal extends Application {
         menuButtons.setVgap(20);
         menuButtons.setStyle("-fx-padding: 20;-fx-border-color: #E7E7E7");
 
-
         panePrincipal.setLeft(menuButtons);
         panePrincipal.setTop(topLogo);
 
-        panePrincipal.setCenter(telaCandidato.gerarTelaStrategy());
+        //panePrincipal.setCenter(telaCandidato.gerarTelaStrategy());
+        panePrincipal.setCenter(telaLogin.gerarTelaStrategy());
 
         btnCandidato.setOnAction((e) -> {
             panePrincipal.setCenter(telaCandidato.gerarTelaStrategy());
@@ -95,5 +96,12 @@ public class TelaPrincipal extends Application {
 
     public static void main(String[] args) {
         Application.launch(TelaPrincipal.class, args);
+    }
+
+    @Override
+    public void executaAcao(String acao) {
+        if ("Entrar".equals(acao)){
+            panePrincipal.setCenter(telaCandidato.gerarTelaStrategy());
+        }
     }
 }

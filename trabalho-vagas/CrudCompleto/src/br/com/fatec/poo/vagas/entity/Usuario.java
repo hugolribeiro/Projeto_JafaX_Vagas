@@ -2,14 +2,19 @@ package br.com.fatec.poo.vagas.entity;
 
 public class Usuario {
 
+    public Usuario() {
+        Role roleUser = new Role();
+        roleUser.setId(2);
+        roleUser.setNome("user");
+        this.setRole(roleUser);
+    }
+
     private long id;
     private int registroFuncionario;
     private String nome;
     private String login;
     private String senha;
-    //private boolean logado; ATENÇÃO --> ACHO QUE É UMA VARIÁVEL DO SISTEMA E Ñ DE USER
-    //private Role role; // ATEÇÃO --> IMPLEMENTAR DEPOIS
-
+    private Role role;
 
     public long getId() {
         return id;
@@ -49,5 +54,13 @@ public class Usuario {
 
     public void setSenha(String senha) {
         this.senha = senha;
+    }
+
+    public void setRole(Role role) {
+        this.role = role;
+    }
+
+    public Role getRole() {
+        return this.role;
     }
 }

@@ -8,8 +8,6 @@ public class Empresa {
     private String razaoSocial;
     private String telefone;
     private  String endereco;
-    //private List<Vaga> vagas;    ATENÇÃO AQUI -> IMPLEMENTAR DEPOIS
-
 
     public long getId() {
         return id;

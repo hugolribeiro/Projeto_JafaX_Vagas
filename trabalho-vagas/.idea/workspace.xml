@@ -2,22 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0bb39095-1c04-4e4d-91a0-03909ab297a4" name="Default Changelist" comment="Corrigido bug na pesquisa">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_6_5_2021_1_08_PM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_6_5_2021_1_08_PM__Default_Changelist_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CrudCompleto/src/br/com/fatec/poo/vagas/boundary/ExecutorAcoes.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CrudCompleto/src/br/com/fatec/poo/vagas/boundary/CandidatoBoundary.java" beforeDir="false" afterPath="$PROJECT_DIR$/CrudCompleto/src/br/com/fatec/poo/vagas/boundary/CandidatoBoundary.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CrudCompleto/src/br/com/fatec/poo/vagas/boundary/TelaPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/CrudCompleto/src/br/com/fatec/poo/vagas/boundary/TelaPrincipal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CrudCompleto/src/br/com/fatec/poo/vagas/control/CandidatoControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/CrudCompleto/src/br/com/fatec/poo/vagas/control/CandidatoControl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CrudCompleto/src/br/com/fatec/poo/vagas/control/EmpresaControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/CrudCompleto/src/br/com/fatec/poo/vagas/control/EmpresaControl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CrudCompleto/src/br/com/fatec/poo/vagas/control/UsuarioControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/CrudCompleto/src/br/com/fatec/poo/vagas/control/UsuarioControl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CrudCompleto/src/br/com/fatec/poo/vagas/control/VagaControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/CrudCompleto/src/br/com/fatec/poo/vagas/control/VagaControl.java" afterDir="false" />
     </list>
-    <list id="9e142847-9810-418d-b1fd-d17d49ffa0e7" name="Changes by Hugo" comment="">
-      <change beforePath="$PROJECT_DIR$/CrudCompleto/src/br/com/fatec/poo/vagas/boundary/EmpresaBoundary.java" beforeDir="false" afterPath="$PROJECT_DIR$/CrudCompleto/src/br/com/fatec/poo/vagas/boundary/EmpresaBoundary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CrudCompleto/src/br/com/fatec/poo/vagas/boundary/UsuarioBoundary.java" beforeDir="false" afterPath="$PROJECT_DIR$/CrudCompleto/src/br/com/fatec/poo/vagas/boundary/UsuarioBoundary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CrudCompleto/src/br/com/fatec/poo/vagas/boundary/VagaBoundary.java" beforeDir="false" afterPath="$PROJECT_DIR$/CrudCompleto/src/br/com/fatec/poo/vagas/boundary/VagaBoundary.java" afterDir="false" />
+    <list id="41bca91d-0d0f-4116-92af-56ecef2d5588" name="Changes by gabri" comment="">
       <change beforePath="$PROJECT_DIR$/CrudCompleto/src/br/com/fatec/poo/vagas/control/EmpresaControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/CrudCompleto/src/br/com/fatec/poo/vagas/control/EmpresaControl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CrudCompleto/src/br/com/fatec/poo/vagas/control/UsuarioControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/CrudCompleto/src/br/com/fatec/poo/vagas/control/UsuarioControl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CrudCompleto/src/br/com/fatec/poo/vagas/control/VagaControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/CrudCompleto/src/br/com/fatec/poo/vagas/control/VagaControl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrudCompleto/src/br/com/fatec/poo/vagas/entity/Empresa.java" beforeDir="false" afterPath="$PROJECT_DIR$/CrudCompleto/src/br/com/fatec/poo/vagas/entity/Empresa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrudCompleto/src/br/com/fatec/poo/vagas/entity/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/CrudCompleto/src/br/com/fatec/poo/vagas/entity/Usuario.java" afterDir="false" />
+    </list>
+    <list id="f5cfeef9-0b5f-4a1a-bb06-d9a0ec457703" name="Changes by Hugo" comment="">
+      <change beforePath="$PROJECT_DIR$/CrudCompleto/src/br/com/fatec/poo/vagas/boundary/TelaPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/CrudCompleto/src/br/com/fatec/poo/vagas/boundary/TelaPrincipal.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,23 +44,13 @@
     </file-type-list>
   </component>
   <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/CrudCompleto/src/br/com/fatec/poo/vagas/control/UsuarioControl.java">
+    <file path="$PROJECT_DIR$/CrudCompleto/src/br/com/fatec/poo/vagas/boundary/TelaPrincipal.java">
       <ranges>
-        <range start1="81" end1="81" start2="81" end2="83" changelist="9e142847-9810-418d-b1fd-d17d49ffa0e7" />
-        <range start1="103" end1="104" start2="105" end2="106" changelist="0bb39095-1c04-4e4d-91a0-03909ab297a4" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/CrudCompleto/src/br/com/fatec/poo/vagas/control/VagaControl.java">
-      <ranges>
-        <range start1="74" end1="74" start2="74" end2="76" changelist="9e142847-9810-418d-b1fd-d17d49ffa0e7" />
-        <range start1="83" end1="84" start2="85" end2="89" changelist="0bb39095-1c04-4e4d-91a0-03909ab297a4" />
-        <range start1="91" end1="91" start2="96" end2="98" changelist="0bb39095-1c04-4e4d-91a0-03909ab297a4" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/CrudCompleto/src/br/com/fatec/poo/vagas/control/EmpresaControl.java">
-      <ranges>
-        <range start1="92" end1="92" start2="92" end2="94" changelist="9e142847-9810-418d-b1fd-d17d49ffa0e7" />
-        <range start1="117" end1="117" start2="119" end2="120" changelist="0bb39095-1c04-4e4d-91a0-03909ab297a4" />
+        <range start1="15" end1="16" start2="15" end2="16" changelist="0bb39095-1c04-4e4d-91a0-03909ab297a4" />
+        <range start1="26" end1="26" start2="26" end2="27" changelist="0bb39095-1c04-4e4d-91a0-03909ab297a4" />
+        <range start1="66" end1="67" start2="67" end2="67" changelist="f5cfeef9-0b5f-4a1a-bb06-d9a0ec457703" />
+        <range start1="70" end1="71" start2="70" end2="72" changelist="0bb39095-1c04-4e4d-91a0-03909ab297a4" />
+        <range start1="98" end1="98" start2="99" end2="106" changelist="0bb39095-1c04-4e4d-91a0-03909ab297a4" />
       </ranges>
     </file>
   </component>
