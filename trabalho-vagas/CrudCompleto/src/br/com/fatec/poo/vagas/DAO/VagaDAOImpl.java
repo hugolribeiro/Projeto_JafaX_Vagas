@@ -11,7 +11,7 @@ public class VagaDAOImpl implements VagaDAO{
 
     private static final String URL = "jdbc:mariadb://localhost:3306/vagasdb?allowMultiQueries=true";
     private static final String USER = "root";
-    private static final String PASSWORD = "123456";
+    private static final String PASSWORD = "";
 
     @Override
     public void adicionar(Vaga vaga) {
