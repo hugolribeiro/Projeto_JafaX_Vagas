@@ -30,7 +30,7 @@ public class LoginBoundary implements TelaStrategy{
 //        txtSenha.setManaged(false);
 //        txtSenha.setVisible(false);
 
-        CheckBox passCheckBox = new CheckBox("Show/Hide password");
+        CheckBox passCheckBox = new CheckBox("Mostrar/Esconder senha");
 
         txtSenha.managedProperty().bind(passCheckBox.selectedProperty());
         txtSenha.visibleProperty().bind(passCheckBox.selectedProperty());
@@ -58,8 +58,8 @@ public class LoginBoundary implements TelaStrategy{
         gp.add(txtLogin, 1, 0);
         gp.add(passSenha, 1, 1);
         gp.add(txtSenha, 1, 1);
-        gp.add(passCheckBox, 3, 3);
-        gp.add(gridButtons,1,4);
+        gp.add(passCheckBox, 2, 2);
+        gp.add(gridButtons,1,2);
 
 
         btnEntrar.setOnAction((e) -> {
