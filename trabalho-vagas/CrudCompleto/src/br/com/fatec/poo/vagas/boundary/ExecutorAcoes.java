@@ -2,5 +2,6 @@ package br.com.fatec.poo.vagas.boundary;
 
 public interface ExecutorAcoes {
 
-    void executaAcao(String acao);
+    void executaAcaoAdmin(String login, String senha, String acao);
+    void executaAcaoUsuario(String login, String senha, String acao);
 }

@@ -1,5 +1,6 @@
 package br.com.fatec.poo.vagas.boundary;
 
+import javafx.geometry.Pos;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
@@ -16,6 +17,7 @@ public class LoginBoundary implements TelaStrategy{
     private TextField txtSenha = new TextField();
 
     private Button btnEntrar = new Button("Entrar");
+    private Button btnLimpar = new Button("Limpar");
     private ExecutorAcoes executor;
 
 //    private static LoginControl control = new LoginControl();
@@ -32,19 +34,51 @@ public class LoginBoundary implements TelaStrategy{
 
         txtLogin.setMaxWidth(150);
         txtSenha.setMaxWidth(150);
+        GridPane gridButons = new GridPane();
+
+        gridButons.add(btnEntrar,0,1);
+        gridButons.add(btnLimpar,1,1);
+        gridButons.setHgap(10);
+
 
         gp.add(txtLogin, 1, 0);
         gp.add(txtSenha, 1, 1);
-        gp.add(btnEntrar,1,2);
+        gp.add(gridButons,1,2);
 
 
         btnEntrar.setOnAction((e) -> {
-            System.out.println("Parabéns, você está logado");
+            String login = txtLogin.getText();
+            String senha = txtSenha.getText();
             String acao = btnEntrar.getText();
-            executor.executaAcao(acao);
+            if(login.equals("Admin") && (senha.equals("Admin"))){
+                limparLogin();
+                System.out.println("Você está logado como admin");
+                executor.executaAcaoAdmin(login, senha, acao);
+            }
+            else if(login.equals("Usuario") && (senha.equals("Usuario"))){
+                limparLogin();
+                System.out.println("Você está logado como usuario");
+                executor.executaAcaoUsuario(login,senha, acao);
+            }
+            else{
+                System.out.println("Erro ao entrar");
+            }
         });
 
+        btnLimpar.setOnAction((e)->{
+            limparLogin();
+        });
+
+//        String role = txtLogin.getText();
+//        if role == "Admin" = telaprincipalcompleta
+//                if role == "usuario" = telaprincipal sem empresa e sem qualquercoisa
+
         return gp;
+    }
+
+    public void limparLogin(){
+        txtLogin.setText("");
+        txtSenha.setText("");
     }
 
 

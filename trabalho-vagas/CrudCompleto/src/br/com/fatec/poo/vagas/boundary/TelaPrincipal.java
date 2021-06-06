@@ -19,6 +19,7 @@ public class TelaPrincipal extends Application implements ExecutorAcoes {
     private Button btnVagas = new Button("Vagas");
     private Button btnUsuario = new Button("Usuario");
     private Button btnEmpresa = new Button("Empresa");
+    private Button btnSair = new Button("Sair");
 
     private TelaStrategy telaCandidato = new CandidatoBoundary();
     private TelaStrategy telaUsuario = new UsuarioBoundary();
@@ -58,12 +59,18 @@ public class TelaPrincipal extends Application implements ExecutorAcoes {
         btnEmpresa.setPrefWidth(100);
         btnEmpresa.setPrefHeight(50);
 
+        btnSair.setPrefWidth(100);
+        btnSair.setPrefHeight(50);
+
         menuButtons.add(btnUsuario, 0, 0);
         menuButtons.add(btnCandidato, 0, 1);
         menuButtons.add(btnVagas, 0, 2);
         menuButtons.add(btnEmpresa, 0, 3);
+        menuButtons.add(btnSair, 0, 4);
         menuButtons.setVgap(20);
         menuButtons.setStyle("-fx-padding: 20;-fx-border-color: #E7E7E7");
+
+        disableAllButtons();
 
         panePrincipal.setLeft(menuButtons);
         panePrincipal.setTop(topLogo);
@@ -89,6 +96,11 @@ public class TelaPrincipal extends Application implements ExecutorAcoes {
             panePrincipal.setCenter(telaVagas.gerarTelaStrategy());
         });
 
+        btnSair.setOnAction((e) -> {
+            panePrincipal.setCenter(telaLogin.gerarTelaStrategy());
+            disableAllButtons();
+        });
+
         stage.setTitle("Título Principal");
         stage.setScene(scn);
         stage.show();
@@ -99,9 +111,34 @@ public class TelaPrincipal extends Application implements ExecutorAcoes {
     }
 
     @Override
-    public void executaAcao(String acao) {
-        if ("Entrar".equals(acao)){
+    public void executaAcaoAdmin(String login, String senha, String acao) {
+        if ("Admin".equals(login) && "Admin".equals(senha) && "Entrar".equals(acao)){
             panePrincipal.setCenter(telaCandidato.gerarTelaStrategy());
+            enableButtons(login);
+        }
+    }
+    public void executaAcaoUsuario(String login, String senha, String acao) {
+        if ("Usuario".equals(login) && "Usuario".equals(senha) && "Entrar".equals(acao)){
+            panePrincipal.setCenter(telaCandidato.gerarTelaStrategy());
+            enableButtons(login);
+        }
+    }
+
+    public void disableAllButtons(){
+        btnUsuario.setDisable(true);
+        btnVagas.setDisable(true);
+        btnEmpresa.setDisable(true);
+        btnCandidato.setDisable(true);
+        btnSair.setDisable(true);
+    }
+
+    public void enableButtons(String login){
+        btnVagas.setDisable(false);
+        btnEmpresa.setDisable(false);
+        btnCandidato.setDisable(false);
+        btnSair.setDisable(false);
+        if(login.equals("Admin")) {
+            btnUsuario.setDisable(false);
         }
     }
 }
