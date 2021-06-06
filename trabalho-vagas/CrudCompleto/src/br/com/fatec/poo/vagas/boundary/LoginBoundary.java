@@ -3,6 +3,7 @@ package br.com.fatec.poo.vagas.boundary;
 import javafx.geometry.Pos;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Pane;
@@ -14,7 +15,8 @@ public class LoginBoundary implements TelaStrategy{
     }
 
     private TextField txtLogin = new TextField();
-    private TextField txtSenha = new TextField();
+    private PasswordField txtSenha = new PasswordField();
+//    private TextField txtSenha = new TextField();
 
     private Button btnEntrar = new Button("Entrar");
     private Button btnLimpar = new Button("Limpar");
