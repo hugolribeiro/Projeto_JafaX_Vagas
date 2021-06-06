@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0bb39095-1c04-4e4d-91a0-03909ab297a4" name="Default Changelist" comment="Corrigido bug na pesquisa">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_6_5_2021_1_08_PM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_6_5_2021_1_08_PM__Default_Changelist_.xml" afterDir="false" />
+    <list default="true" id="0bb39095-1c04-4e4d-91a0-03909ab297a4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrudCompleto/src/br/com/fatec/poo/vagas/DAO/VagaDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/CrudCompleto/src/br/com/fatec/poo/vagas/DAO/VagaDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrudCompleto/src/br/com/fatec/poo/vagas/boundary/TelaPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/CrudCompleto/src/br/com/fatec/poo/vagas/boundary/TelaPrincipal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrudCompleto/src/br/com/fatec/poo/vagas/control/EmpresaControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/CrudCompleto/src/br/com/fatec/poo/vagas/control/EmpresaControl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrudCompleto/src/br/com/fatec/poo/vagas/control/VagaControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/CrudCompleto/src/br/com/fatec/poo/vagas/control/VagaControl.java" afterDir="false" />
     </list>
     <list id="41bca91d-0d0f-4116-92af-56ecef2d5588" name="Changes by gabri" comment="" />
-    <list id="f5cfeef9-0b5f-4a1a-bb06-d9a0ec457703" name="Changes by Hugo" comment="" />
+    <list id="f5cfeef9-0b5f-4a1a-bb06-d9a0ec457703" name="Changes by Hugo" comment="">
+      <change beforePath="$PROJECT_DIR$/CrudCompleto/src/br/com/fatec/poo/vagas/DAO/VagaDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/CrudCompleto/src/br/com/fatec/poo/vagas/DAO/VagaDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrudCompleto/src/br/com/fatec/poo/vagas/boundary/VagaBoundary.java" beforeDir="false" afterPath="$PROJECT_DIR$/CrudCompleto/src/br/com/fatec/poo/vagas/boundary/VagaBoundary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrudCompleto/src/br/com/fatec/poo/vagas/entity/Empresa.java" beforeDir="false" afterPath="$PROJECT_DIR$/CrudCompleto/src/br/com/fatec/poo/vagas/entity/Empresa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrudCompleto/src/br/com/fatec/poo/vagas/entity/Vaga.java" beforeDir="false" afterPath="$PROJECT_DIR$/CrudCompleto/src/br/com/fatec/poo/vagas/entity/Vaga.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,6 +43,16 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/CrudCompleto/src/br/com/fatec/poo/vagas/DAO/VagaDAOImpl.java">
+      <ranges>
+        <range start1="19" end1="20" start2="19" end2="20" changelist="f5cfeef9-0b5f-4a1a-bb06-d9a0ec457703" />
+        <range start1="23" end1="23" start2="23" end2="24" changelist="f5cfeef9-0b5f-4a1a-bb06-d9a0ec457703" />
+        <range start1="33" end1="34" start2="34" end2="35" changelist="0bb39095-1c04-4e4d-91a0-03909ab297a4" />
+        <range start1="42" end1="42" start2="43" end2="44" changelist="0bb39095-1c04-4e4d-91a0-03909ab297a4" />
+      </ranges>
+    </file>
   </component>
   <component name="ProjectId" id="1tV6Uthx4PXhuNY4RQrWJWy6Wl4" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />

@@ -94,6 +94,7 @@ public class TelaPrincipal extends Application implements ExecutorAcoes {
 
         btnVagas.setOnAction((e) -> {
             panePrincipal.setCenter(telaVagas.gerarTelaStrategy());
+
         });
 
         btnSair.setOnAction((e) -> {
@@ -101,7 +102,7 @@ public class TelaPrincipal extends Application implements ExecutorAcoes {
             disableAllButtons();
         });
 
-        stage.setTitle("Título Principal");
+        stage.setTitle("Sistema Vagas de Emprego");
         stage.setScene(scn);
         stage.show();
     }

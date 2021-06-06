@@ -18,7 +18,7 @@ public class EmpresaControl {
 
     private static final String URL = "jdbc:mariadb://localhost:3306/vagasdb?allowMultiQueries=true";
     private static final String USER = "root";
-    private static final String PASSWORD = "123456";
+    private static final String PASSWORD = "";
 
     private ObservableList<Empresa> empresas = FXCollections.observableArrayList();
     private TableView<Empresa> table = new TableView<Empresa>();

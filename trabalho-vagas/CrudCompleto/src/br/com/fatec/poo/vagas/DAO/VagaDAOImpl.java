@@ -31,7 +31,7 @@ public class VagaDAOImpl implements VagaDAO{
     public List<Vaga> pesquisarPorCargo(String cargo) {
         List<Vaga> lista = new ArrayList<>();
         try (Connection con = DriverManager.getConnection(URL, USER, PASSWORD)) {
-            String sql = "SELECT * FROM vaga WHERE cargo LIKE ?";
+            String sql = "SELECT * FROM VAGA VG WHERE CARGO LIKE ?;";
             PreparedStatement stmt = con.prepareStatement(sql);
             stmt.setString(1, "%" + cargo + "%");
             ResultSet rs = stmt.executeQuery();
@@ -40,6 +40,7 @@ public class VagaDAOImpl implements VagaDAO{
                 vaga.setId(rs.getInt("id"));
                 vaga.setCargo(rs.getString("cargo"));
                 vaga.setSalario(rs.getDouble("salario"));
+                vaga.setIdEmpresa(rs.getLong("idEmpresa"));
                 lista.add(vaga);
             }
         } catch (SQLException e) {
