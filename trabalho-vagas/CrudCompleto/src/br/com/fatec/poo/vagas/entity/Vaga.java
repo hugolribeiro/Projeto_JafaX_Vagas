@@ -5,7 +5,7 @@ public class Vaga {
     private long id;
     private String cargo;
     private double salario;
-    private long idEmpresa;
+    private String idEmpresa;
 
     public long getId() {
         return id;
@@ -31,11 +31,11 @@ public class Vaga {
         this.salario = salario;
     }
 
-    public long getIdEmpresa(){
+    public String getIdEmpresa(){
         return idEmpresa;
     }
 
-    public void setIdEmpresa(long idEmpresa){
+    public void setIdEmpresa(String idEmpresa){
         this.idEmpresa = idEmpresa;
     }
 

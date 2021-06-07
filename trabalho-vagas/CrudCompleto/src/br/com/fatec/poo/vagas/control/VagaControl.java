@@ -18,7 +18,7 @@ public class VagaControl {
     private LongProperty id = new SimpleLongProperty(1);
     private StringProperty cargo = new SimpleStringProperty("");
     private DoubleProperty salario = new SimpleDoubleProperty(0);
-    private LongProperty idEmpresa = new SimpleLongProperty(0);
+    private StringProperty idEmpresa = new SimpleStringProperty("");
     private VagaDAO service = new VagaDAOImpl();
 
     public void setEntity(Vaga vaga) {
@@ -66,7 +66,7 @@ public class VagaControl {
         id.set(0);
         cargo.set("");
         salario.set(0);
-        idEmpresa.set(0);
+        idEmpresa.set("");
         this.listarTodos();
     }
 
@@ -87,8 +87,8 @@ public class VagaControl {
         TableColumn<Vaga, Double> colSalario = new TableColumn<>("Salario");
         colSalario.setCellValueFactory(new PropertyValueFactory<Vaga, Double>("salario"));
 
-        TableColumn<Vaga, Long> colEmpresa = new TableColumn<>("Empresa");
-        colEmpresa.setCellValueFactory(new PropertyValueFactory<Vaga, Long>("idEmpresa"));
+        TableColumn<Vaga, String> colEmpresa = new TableColumn<>("Empresa");
+        colEmpresa.setCellValueFactory(new PropertyValueFactory<Vaga, String>("idEmpresa"));
 
         table.getColumns().addAll(colId, colCargo, colSalario,colEmpresa);
 
@@ -121,10 +121,10 @@ public class VagaControl {
     public DoubleProperty salarioProperty() {
         return salario;
     }
-    public Long getIdempresa() {
+    public String getIdempresa() {
         return idEmpresa.get();
     }
-    public LongProperty idEmpresaProperty() {
+    public StringProperty idEmpresaProperty() {
         return idEmpresa;
     }
     public TableView<Vaga> getTable() {

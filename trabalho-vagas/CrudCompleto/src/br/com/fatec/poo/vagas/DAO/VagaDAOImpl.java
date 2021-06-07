@@ -22,7 +22,7 @@ public class VagaDAOImpl implements VagaDAO{
             PreparedStatement stmt = con.prepareStatement(sql);
             stmt.setString(1, vaga.getCargo());
             stmt.setDouble(2, vaga.getSalario());
-            stmt.setDouble(3, vaga.getIdEmpresa());
+            stmt.setString(3, vaga.getIdEmpresa());
             stmt.execute();
         } catch (SQLIntegrityConstraintViolationException cv) {
             JOptionPane.showMessageDialog(null, "IdEmpresa não existe! Crie primeiro em EMPRESA",
@@ -36,7 +36,8 @@ public class VagaDAOImpl implements VagaDAO{
     public List<Vaga> pesquisarPorCargo(String cargo) {
         List<Vaga> lista = new ArrayList<>();
         try (Connection con = DriverManager.getConnection(URL, USER, PASSWORD)) {
-            String sql = "SELECT * FROM VAGA VG WHERE CARGO LIKE ? ORDER BY IDEMPRESA;";
+            String sql = "SELECT vaga.id, vaga.cargo, vaga.salario, empresa.nome FROM vaga INNER JOIN " +
+                    "empresa ON vaga.idEmpresa=empresa.id WHERE cargo LIKE ? ORDER BY idEmpresa;";
             PreparedStatement stmt = con.prepareStatement(sql);
             stmt.setString(1, "%" + cargo + "%");
             ResultSet rs = stmt.executeQuery();
@@ -45,7 +46,7 @@ public class VagaDAOImpl implements VagaDAO{
                 vaga.setId(rs.getInt("id"));
                 vaga.setCargo(rs.getString("cargo"));
                 vaga.setSalario(rs.getDouble("salario"));
-                vaga.setIdEmpresa(rs.getLong("idEmpresa"));
+                vaga.setIdEmpresa(rs.getString("nome"));
                 lista.add(vaga);
             }
         } catch (SQLException e) {

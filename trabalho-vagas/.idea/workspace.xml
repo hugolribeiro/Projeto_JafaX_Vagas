@@ -3,8 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="0bb39095-1c04-4e4d-91a0-03909ab297a4" name="Default Changelist" comment="Inplementação de chave estrangeira">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CrudCompleto/src/br/com/fatec/poo/vagas/boundary/LoginBoundary.java" beforeDir="false" afterPath="$PROJECT_DIR$/CrudCompleto/src/br/com/fatec/poo/vagas/boundary/LoginBoundary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CrudCompleto/src/br/com/fatec/poo/vagas/boundary/TelaPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/CrudCompleto/src/br/com/fatec/poo/vagas/boundary/TelaPrincipal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrudCompleto/src/br/com/fatec/poo/vagas/DAO/VagaDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/CrudCompleto/src/br/com/fatec/poo/vagas/DAO/VagaDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrudCompleto/src/br/com/fatec/poo/vagas/boundary/VagaBoundary.java" beforeDir="false" afterPath="$PROJECT_DIR$/CrudCompleto/src/br/com/fatec/poo/vagas/boundary/VagaBoundary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrudCompleto/src/br/com/fatec/poo/vagas/control/VagaControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/CrudCompleto/src/br/com/fatec/poo/vagas/control/VagaControl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CrudCompleto/src/br/com/fatec/poo/vagas/entity/Vaga.java" beforeDir="false" afterPath="$PROJECT_DIR$/CrudCompleto/src/br/com/fatec/poo/vagas/entity/Vaga.java" afterDir="false" />
     </list>
     <list id="41bca91d-0d0f-4116-92af-56ecef2d5588" name="Changes by gabri" comment="" />
     <list id="f5cfeef9-0b5f-4a1a-bb06-d9a0ec457703" name="Changes by Hugo" comment="" />

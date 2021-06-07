@@ -77,7 +77,7 @@ public class VagaBoundary implements TelaStrategy {
         Bindings.bindBidirectional(txtId.textProperty(), control.idProperty(), longToStringConverter);
         Bindings.bindBidirectional(txtCargo.textProperty(), control.cargoProperty());
         Bindings.bindBidirectional(txtSalario.textProperty(), control.salarioProperty(), doubleToStringConverter);
-        Bindings.bindBidirectional(txtIdEmpresa.textProperty(), control.idEmpresaProperty(), longToStringConverter);
+        Bindings.bindBidirectional(txtIdEmpresa.textProperty(), control.idEmpresaProperty());
 
         return gp;
     }
