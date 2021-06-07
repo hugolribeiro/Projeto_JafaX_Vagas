@@ -55,8 +55,6 @@ public class TelaPrincipal extends Application implements ExecutorAcoes {
         topLogo.setStyle("-fx-background-image: url(logo.jpg);-fx-border-color: #E7E7E7;");
 
 
-
-
         btnUsuario.setPrefWidth(100);
         btnUsuario.setPrefHeight(50);
 

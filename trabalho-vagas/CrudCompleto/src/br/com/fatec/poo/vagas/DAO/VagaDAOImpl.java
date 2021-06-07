@@ -23,7 +23,9 @@ public class VagaDAOImpl implements VagaDAO{
             stmt.setDouble(2, vaga.getSalario());
             stmt.setDouble(3, vaga.getIdEmpresa());
             stmt.execute();
-        } catch (SQLException e) {
+        } catch (SQLIntegrityConstraintViolationException cv) {
+            System.out.println("IDEMPRESA não existe!");
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
@@ -32,7 +34,7 @@ public class VagaDAOImpl implements VagaDAO{
     public List<Vaga> pesquisarPorCargo(String cargo) {
         List<Vaga> lista = new ArrayList<>();
         try (Connection con = DriverManager.getConnection(URL, USER, PASSWORD)) {
-            String sql = "SELECT * FROM VAGA VG WHERE CARGO LIKE ?;";
+            String sql = "SELECT * FROM VAGA VG WHERE CARGO LIKE ? ORDER BY IDEMPRESA;";
             PreparedStatement stmt = con.prepareStatement(sql);
             stmt.setString(1, "%" + cargo + "%");
             ResultSet rs = stmt.executeQuery();
