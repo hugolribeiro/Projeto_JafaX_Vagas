@@ -3,6 +3,7 @@ package br.com.fatec.poo.vagas.DAO;
 import br.com.fatec.poo.vagas.entity.Vaga;
 import br.com.fatec.poo.vagas.entity.Usuario;
 
+import javax.swing.*;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -24,7 +25,8 @@ public class VagaDAOImpl implements VagaDAO{
             stmt.setDouble(3, vaga.getIdEmpresa());
             stmt.execute();
         } catch (SQLIntegrityConstraintViolationException cv) {
-            System.out.println("IDEMPRESA não existe!");
+            JOptionPane.showMessageDialog(null, "IdEmpresa não existe! Crie primeiro em EMPRESA",
+                                          "ERRO - ID", JOptionPane.INFORMATION_MESSAGE);
         } catch (Exception e) {
             e.printStackTrace();
         }

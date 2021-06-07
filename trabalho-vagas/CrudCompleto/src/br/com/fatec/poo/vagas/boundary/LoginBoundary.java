@@ -6,6 +6,8 @@ import javafx.scene.control.*;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Pane;
 
+import javax.swing.*;
+
 public class LoginBoundary implements TelaStrategy{
 
     public LoginBoundary(ExecutorAcoes executor){
@@ -69,12 +71,14 @@ public class LoginBoundary implements TelaStrategy{
             String acao = btnEntrar.getText();
             if(login.equals("Admin") && (senha.equals("Admin"))){
                 limparLogin();
-                System.out.println("Você está logado como admin");
+                JOptionPane.showMessageDialog(null, "Você está logado como Administrador!",
+                                              "Login", JOptionPane.INFORMATION_MESSAGE);
                 executor.executaAcaoAdmin(login, senha, acao);
             }
             else if(login.equals("Usuario") && (senha.equals("Usuario"))){
                 limparLogin();
-                System.out.println("Você está logado como usuario");
+                JOptionPane.showMessageDialog(null, "Você está logado como Usuario!",
+                        "Login", JOptionPane.INFORMATION_MESSAGE);
                 executor.executaAcaoUsuario(login,senha, acao);
             }
             else{
