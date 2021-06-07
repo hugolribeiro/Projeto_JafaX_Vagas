@@ -5,12 +5,19 @@ import br.com.fatec.poo.vagas.control.EmpresaControl;
 import br.com.fatec.poo.vagas.control.UsuarioControl;
 import br.com.fatec.poo.vagas.control.VagaControl;
 import javafx.application.Application;
+import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+import javafx.scene.layout.Background;
 import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.CornerRadii;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
+
+import java.awt.*;
 
 
 public class TelaPrincipal extends Application implements ExecutorAcoes {
@@ -42,10 +49,13 @@ public class TelaPrincipal extends Application implements ExecutorAcoes {
         Scene scn = new Scene(panePrincipal, 700, 470);
 
         GridPane menuButtons = new GridPane();
-        Label topLogo= new Label("Logo");
+        Label topLogo= new Label("");
         topLogo.setPrefWidth(700);
         topLogo.setPrefHeight(80);
-        topLogo.setStyle("-fx-border-color: #E7E7E7");
+        topLogo.setStyle("-fx-background-image: url(logo.jpg);-fx-border-color: #E7E7E7;");
+
+
+
 
         btnUsuario.setPrefWidth(100);
         btnUsuario.setPrefHeight(50);

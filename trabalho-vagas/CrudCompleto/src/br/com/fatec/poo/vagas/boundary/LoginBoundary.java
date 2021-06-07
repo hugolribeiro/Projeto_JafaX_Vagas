@@ -1,5 +1,6 @@
 package br.com.fatec.poo.vagas.boundary;
 
+import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.control.*;
 import javafx.scene.layout.GridPane;
@@ -25,7 +26,7 @@ public class LoginBoundary implements TelaStrategy{
     @Override
     public Pane gerarTelaStrategy() {
         GridPane gp = new GridPane();
-
+        gp.setPadding(new Insets(10,10,10,10));
 //        Não houve a necessidade
 //        txtSenha.setManaged(false);
 //        txtSenha.setVisible(false);
