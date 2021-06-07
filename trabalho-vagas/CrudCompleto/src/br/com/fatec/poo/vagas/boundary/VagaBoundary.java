@@ -17,6 +17,7 @@ public class VagaBoundary implements TelaStrategy {
     private TextField txtId = new TextField();
     private TextField txtCargo = new TextField();
     private TextField txtSalario = new TextField();
+    private TextField txtIdEmpresa = new TextField();
 
     private Button btnAdicionar = new Button("Adicionar");
     private Button btnPesquisar = new Button("Pesquisar");
@@ -33,14 +34,17 @@ public class VagaBoundary implements TelaStrategy {
         gp.add(new Label("Id"), 0, 0);
         gp.add(new Label("Cargo"), 0, 1);
         gp.add(new Label("Salário"), 0, 2);
+        gp.add(new Label("IdEmpresa"), 0, 3);
 
         txtId.setMaxWidth(150);
         txtCargo.setMaxWidth(150);
         txtSalario.setMaxWidth(150);
+        txtIdEmpresa.setMaxWidth(150);
 
         gp.add(txtId, 1, 0);
         gp.add(txtCargo,1, 1);
         gp.add(txtSalario,1, 2);
+        gp.add(txtIdEmpresa, 1, 3);
 
         GridPane gpButtons = new GridPane();
         gpButtons.add(btnAdicionar, 0, 3);
@@ -73,6 +77,7 @@ public class VagaBoundary implements TelaStrategy {
         Bindings.bindBidirectional(txtId.textProperty(), control.idProperty(), longToStringConverter);
         Bindings.bindBidirectional(txtCargo.textProperty(), control.cargoProperty());
         Bindings.bindBidirectional(txtSalario.textProperty(), control.salarioProperty(), doubleToStringConverter);
+        Bindings.bindBidirectional(txtIdEmpresa.textProperty(), control.idEmpresaProperty(), longToStringConverter);
 
         return gp;
     }

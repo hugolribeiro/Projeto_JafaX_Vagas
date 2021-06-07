@@ -1,5 +1,8 @@
 package br.com.fatec.poo.vagas.entity;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Empresa {
 
     private long id;
@@ -8,6 +11,8 @@ public class Empresa {
     private String razaoSocial;
     private String telefone;
     private  String endereco;
+
+    private List<Vaga> listaVagas = new ArrayList<Vaga>();
 
     public long getId() {
         return id;

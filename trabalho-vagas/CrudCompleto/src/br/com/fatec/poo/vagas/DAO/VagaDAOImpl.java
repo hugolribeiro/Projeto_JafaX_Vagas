@@ -17,10 +17,11 @@ public class VagaDAOImpl implements VagaDAO{
     public void adicionar(Vaga vaga) {
         try (Connection con = DriverManager.getConnection(URL, USER, PASSWORD)) {
             String sql = "INSERT INTO vaga " +
-                    "(cargo, salario) VALUES (?, ?)";
+                    "(cargo, salario, idEmpresa) VALUES (?, ?, ?)";
             PreparedStatement stmt = con.prepareStatement(sql);
             stmt.setString(1, vaga.getCargo());
             stmt.setDouble(2, vaga.getSalario());
+            stmt.setDouble(3, vaga.getIdEmpresa());
             stmt.execute();
         } catch (SQLException e) {
             e.printStackTrace();
