@@ -82,7 +82,8 @@ public class LoginBoundary implements TelaStrategy{
                 executor.executaAcaoUsuario(login,senha, acao);
             }
             else{
-                System.out.println("Erro ao entrar");
+                JOptionPane.showMessageDialog(null, "Erro ao entrar",
+                                              "Erro no Login", JOptionPane.INFORMATION_MESSAGE);
             }
         });
 
