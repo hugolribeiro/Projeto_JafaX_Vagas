@@ -37,7 +37,7 @@ public class VagaDAOImpl implements VagaDAO{
         List<Vaga> lista = new ArrayList<>();
         try (Connection con = DriverManager.getConnection(URL, USER, PASSWORD)) {
             String sql = "SELECT vaga.id, vaga.cargo, vaga.salario, empresa.nome FROM vaga INNER JOIN " +
-                    "empresa ON vaga.idEmpresa=empresa.id WHERE cargo LIKE ? ORDER BY id;";
+                    "empresa ON vaga.idEmpresa=empresa.id WHERE cargo LIKE ? ORDER BY empresa.id;";
             PreparedStatement stmt = con.prepareStatement(sql);
             stmt.setString(1, "%" + cargo + "%");
             ResultSet rs = stmt.executeQuery();
