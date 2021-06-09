@@ -1,1 +1,1 @@
-# Projeto_JafaX_Vagas - FATEC
+# Projeto_JavaFX_Vagas - FATEC
